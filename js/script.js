@@ -335,13 +335,39 @@ $(document).ready(function() {
 		
 	// 07. COUNTDOWN
 	//===================================================================================
-	var theday = new Date();
-	theday = new Date(2015, 7, 12);
-	$('#countdown').countdown({until: theday, format: 'WDHMS'});
-	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
-		 
-	$('#date-countdown').countdown({until: theday, format: 'WDHMS'});
-		 
+	//var theday = new Date();
+	//theday = new Date(2015, 7, 12);
+	//$('#countdown').countdown({until: theday, format: 'WDHMS'});
+	//$('#countdown').countdown($.countdown.regionalOptions['custom-label']);
+
+	//$('#date-countdown').countdown({until: theday, format: 'WDHMS'});
+	var countDownDate = new Date(2023, 5, 4).getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+		// Get today's date and time
+		var now = new Date().getTime();
+
+		// Find the distance between now and the count down date
+		var distance = countDownDate - now;
+
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		// Display the result in the element with id="demo"
+		document.getElementById("countdown").innerHTML = "<span style='font-size:40px'>" + days + "d " + hours +"h " + minutes + "m " + seconds + "s " +"</span>"
+		;
+
+		// If the count down is finished, write some text
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+	}, 1000);
 	// 08. MOBILE MENU
 	//==================================================================================
 	$("#mobile-nav").click(function(e){

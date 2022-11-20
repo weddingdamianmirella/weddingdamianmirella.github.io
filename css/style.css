@@ -430,7 +430,7 @@ img.with-border{
 	margin:auto; 
 	top:0; 
 	bottom:0; 
-	left:0; 
+	left:28px;
 	right:0;
 }
 
@@ -2512,12 +2512,12 @@ form .has-error .btn-primary{
 }
 
 #counting{
-	font-size:65px; 
+	font-size:85px;
 	line-height:50px
 }
 
 #down{
-	font-size:55px; 
+	font-size:75px;
 	line-height:65px;
 }
 
