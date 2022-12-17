@@ -341,7 +341,7 @@ $(document).ready(function() {
 	//$('#countdown').countdown($.countdown.regionalOptions['custom-label']);
 
 	//$('#date-countdown').countdown({until: theday, format: 'WDHMS'});
-	var countDownDate = new Date(2023, 5, 4).getTime();
+	var countDownDate = new Date(2023, 6, 3).getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {
