@@ -430,7 +430,6 @@ img.with-border{
 	margin:auto; 
 	top:0; 
 	bottom:0;
-	margin-left: 110px;
 }
 
 #nav-bar.nav-center #nav-menu{
@@ -485,7 +484,6 @@ img.with-border{
 }
 
 #nav-menu > li.first-child:before{
-	content: "";
 	margin-left: 0;
 }
 

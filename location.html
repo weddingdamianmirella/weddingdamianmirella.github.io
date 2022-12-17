@@ -33,6 +33,15 @@
         
         <!-- Theme CSS -->
     	<link href="css/style.css" rel="stylesheet" media="screen">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <script>
+            $(function () {
+                $("#topbar").load("topbar.html");
+                $("#logo").load("logo.html");
+            });
+        </script>
         
         <!-- Skin CSS -->
     	<!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
@@ -63,141 +72,26 @@
         </div> <!--END of PRELOADER-->
        
         
-        <!-- NAVIGATION -->   
-    	<header id="nav-header">
-        	<nav id="nav-bar" class="top-bar fluid-width block-color nav-center sticky-nav animation fadeInDown">
-            	
+        <!-- NAVIGATION -->
+        <header id="nav-header">
+            <nav id="nav-bar" class="top-bar fluid-width block-color nav-center sticky-nav animation fadeInDown">
                 <div id="nav-wrapper">
-            		
+
                     <!-- LOGO -->
-            		<div class="logo-wrapper">
-                		<!-- CSS LOGO --> 
-                        <a href="index.html">
-                    		<div class="css-logo rounded">
-                   				<div class="css-logo-text">
-                        			<strong>G</strong><i class="de-icon-heart-1"></i><strong>D</strong>
-                    			</div>
-                    		</div>
-                        </a>
-                    
-                    	<!-- IMG LOGO 
-                    	<div class="img-logo">
-                    		<img src="images/slide1.jpg">
-                    	</div>-->
-                	</div>
-                	<!-- END of LOGO -->
-                    
+                    <div id="logo"></div>
+                    <!-- END of LOGO -->
+
                     <div id="mobile-nav">
-                    	<i class="de-icon-menu"></i>
+                        <i class="de-icon-menu"></i>
                     </div>
-                
-                	<ul id="nav-menu">
-                		<li class="first-child">
-                        	<a href="index.html">HOME</a>
-                            <ul>
-                            	<li>
-                                	<a href="#">MENU VARIATIONS</a>
-                                    <ul>
-                                    	<li><a href="index.html">TOP BAR - TRANSPARENT</a></li>
-                                        <li><a href="index.html">TOP BAR - COLOR</a></li>
-                                        <li><a href="index-bottombar-transparent.html">BOTTOM BAR - TRANSPARENT</a></li>
-                                        <li><a href="index-bottombar-color.html">BOTTOM BAR - COLOR</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                	<a href="#">SLIDER VARIATIONS</a>
-                                    <ul>
-                                    	<li><a href="index.html">IMAGE - FADE</a></li>
-                                        <li><a href="index-slide.html">IMAGE - SLIDE</a></li>
-                                        <li><a href="index-image-animation-v1.html">IMAGE - ANIMATION - MUSIC - V1</a></li>
-                                        <li><a href="index-image-animation-v2.html">IMAGE - ANIMATION - MUSIC - V2</a></li>
-                                        <li><a href="index-title-animation.html">TITLE - ANIMATION</a></li>
-                                        <li><a href="index-image-title-animation.html">TITLE &amp; IMAGE - ANIMATION</a></li>
-                                        <li><a href="index-video.html">VIDEO</a></li>
-                                    </ul>
-                                </li>  
-                                <li>
-                                	<a href="#">PRELOADER VARIATIONS</a>
-                                    <ul>
-                                    	<li><a href="index.html">PRELOADER - DEFAULT</a></li>
-                                        <li><a href="index-preloader-logo-spinner.html">PRELOADER - V1</a></li>
-                                        <li><a href="index-preloader-couple-name.html">PRELOADER - V2</a></li>
-                                    </ul>
-                                </li>                             
-                            </ul>
-                        </li>
-                   		<li>
-                        	<a href="#">ABOUT</a>
-                            <ul>
-                            	<li>
-                                	<a href="profile-him.html">ABOUT HIM</a>
-                                </li>
-                                <li>
-                                	<a href="profile-her.html">ABOUT HER</a>
-                                </li>
-                           	</ul> 	
-                        </li>
-                    	<li>
-                        	<a href="#">GALLERY</a>
-                            <ul>
-                            	<li><a href="gallery.html">GALLERY</a></li>
-                                <li><a href="gallery-slider.html">GALLERY WITH SLIDER</a></li>
-                                <li><a href="gallery-full-5col.html">FULL GALLERY - 5 COLUMN</a></li>
-                                <li><a href="gallery-full-4col.html">FULL GALLERY - 4 COLUMN</a></li>
-                                <li><a href="gallery-full-3col.html">FULL GALLERY - 3 COLUMN</a></li>
-                            </ul>
-                        </li>
-                    	<li><a href="the-story.html">THE STORY</a></li>
-                        <li class="first-child split-margin">
-                        	<a href="#">THE WEDDING</a>
-                             <ul>
-                             	<li><a href="location.html">LOCATION</a></li>
-                                <li><a href="accomodation.html">ACCOMODATION</a></li>
-                                <li>
-                                	<a href="#">BRIDESMAID</a>
-                                    <ul>
-                             			<li><a href="bridesmaid-gallery.html">BRIDESMAID GALLERY</a></li>
-                                		<li><a href="bridesmaid-parallax-image.html">BRIDESMAID - PARALLAX IMAGE</a></li>
-                           			</ul>
-                                </li>
-                                <li>
-                                	<a href="#">GROOMSMEN</a>
-                                    <ul>
-                             			<li><a href="groomsmen-gallery.html">GROOMSMEN GALLERY</a></li>
-                                		<li><a href="groomsmen-parallax-image.html">GROOMSMEN - PARALLAX IMAGE</a></li>
-                           			</ul>
-                                </li>
-                                <li><a href="gift.html">GIFT REGISTRY</a></li>
-                            </ul>
-                        </li>
-                    	
-                        <li>
-                        	<a href="#">BLOG</a>
-                            <ul>
-                            	<li><a href="blog.html">BLOG</a></li>
-                                <li><a href="blog-slider.html">BLOG SLIDER</a></li>
-                                <li><a href="blog-parallax-image.html">BLOG PARALLAX IMAGE</a></li>
-                                <li><a href="blog-parallax-sidebar.html">BLOG PARALLAX - SIDEBAR</a></li>
-                            </ul>
-                        </li>
-                    	<li>
-                       	 	<a href="page.html">PAGE</a>
-                        </li>
-                    	<li>
-                        	<a href="#">RSVP</a>
-                            <ul>
-                             	<li><a href="rsvp-1.html">RSVP - 1</a></li>
-                                <li><a href="rsvp-2.html">RSVP - 2</a></li>
-                                <li><a href="rsvp-3.html">RSVP - 3</a></li>
-                                <li><a href="rsvp-custom.html">CUSTOM</a></li>
-                           	</ul>
-                        </li>
-                	</ul>
-                    
+
+                    <!-- TOP-BAR -->
+                    <div id="topbar"></div>
+                    <!-- END of TOP-BAR -->
+
                     <div class="clearboth"></div>
-                    
+
                 </div>
-                
             </nav>
         </header> <!-- END of NAVIGATION -->
         
