@@ -36,14 +36,6 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-		<script type="text/javascript">
-			function googleTranslateElementInit() {
-				new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
-			}
-		</script>
-
 		<script>
 			$(function () {
 				$("#topbar").load("topbar.html");
@@ -412,14 +404,21 @@
 				<div id="footer-home"></div>
 		</footer>
 
-
-		<section>
-			<span>
-                <br>
-			    <div style="text-align: center" id="google_translate_element"></div>
-			    <br>
-            </span>
+		<section id="translateSection">
+			<br>
+			<div style="text-align: center" id="google_translate_element"></div>
+			<br>
 		</section>
+
+
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+			}
+		</script>
+
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 		<!-- jQuery -->
     	<script src="js/jquery-1.11.1.min.js"></script>
