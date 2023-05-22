@@ -154,6 +154,33 @@
 
 		</section><!-- ENF of MAIN SLIDER -->
 
+		<section id="news">
+			<div  class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div id="blink" style="text-align: center;padding-top: 80px;">
+							<a href="news.html" target="_blank">
+								<span style="color: #f00; font-size: 50px; font-weight:bold;">Aggiornamenti</span>
+							</a>
+						</div>
+						<script language="JavaScript">
+							function blink_one() {
+								document.getElementById('blink').style.visibility='visible';
+								setTimeout('blink_two()',700);
+							}
+							function blink_two() {
+								document.getElementById('blink').style.visibility='hidden';
+								setTimeout('blink_one()',700);
+							}
+							blink_one();
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
 		<!-- THE WEDDING SECTION -->
 		<section id="the-wedding">
 
